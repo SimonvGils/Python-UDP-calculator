@@ -13,14 +13,12 @@ number2,  clientAddress	 = serverSocket.recvfrom(2048)
 
 
 if calc == '+':
-	modifiedAddition = int(number1.decode()) + int(number2.decode())
-	modifiedAddition = str(modifiedAddition)
+	modifiedAddition = int(number1.decode()) + int(number2.decode())	
+	modifiedAddition = str(modifiedAddition)	
 	serverSocket.sendto(modifiedAddition.encode(), clientAddress)
 	print('You added up numbers')
 else: 
 	pass
-
-
 
 if calc == '-':
 	modifiedAddition = int(number1.decode()) - int(number2.decode())
