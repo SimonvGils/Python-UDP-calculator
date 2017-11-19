@@ -1,3 +1,2 @@
 # Python-UDP-calculator
-
-# Python version 2.7.12
+Python version 2.7.12
