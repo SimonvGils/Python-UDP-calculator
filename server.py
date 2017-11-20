@@ -7,11 +7,6 @@ serverSocket = socket.socket(socket.AF_INET,socket.SOCK_DGRAM)
 serverSocket.bind(('localhost',12456))
 print ('The server is connected')
 while 1:
-	
-	MESSAGE, clientAddress = serverSocket.recvfrom(2048)
-	serverSocket.sendto(MESSAGE,clientAddress)
-	print 'Data has been received:', MESSAGE
-	print '\n'
 
 	number1, clientAddress = serverSocket.recvfrom(2048)
 	print 'Number1 received:', number1
